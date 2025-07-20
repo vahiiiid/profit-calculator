@@ -1,12 +1,16 @@
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+
+# Compiled binary (project specific)
+profit-calculator
+profit-calculator-*
 
 # Test binary, built with `go test -c`
 *.test
@@ -24,9 +28,60 @@ profile.cov
 go.work
 go.work.sum
 
-# env file
+# Environment files
 .env
+.env.local
+.env.production
+.env.staging
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archive files
+*.tar.gz
+*.zip
+*.7z
+
+# Fyne GUI Application specific
+# Fyne packaged applications
+*.app/
+*.appimage
+*.deb
+*.rpm
+*.dmg
+*.msi
+*.pkg
+
+# Fyne resource bundle files (auto-generated)
+resource.go
+bundled.go
+
+# Fyne metadata and packaging artifacts
+fyne-cross/
+.fyne-package/
+metadata.xml
+
+# Platform-specific Fyne build outputs
+dist/
+build/
+release/
